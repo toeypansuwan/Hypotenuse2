@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondaryActivity"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_toRightOf="@id/tvA"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/triangle"/>
+        <TextView
+            android:id="@+id/tvB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:gravity="center"
+            android:text="log b"
+            android:layout_alignLeft="@id/image"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/tvC"
+            android:paddingRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_toRightOf="@+id/image"
+            android:gravity="center"
+            android:text="log c" />
+
+        <TextView
+            android:id="@+id/tvA"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="log a" />
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvB"
+            android:layout_centerHorizontal="true"
+            android:text="ok"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

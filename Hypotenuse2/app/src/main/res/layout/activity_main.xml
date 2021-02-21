@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pythagorean Theorem : solve for hypotenus"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/triangle"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C?"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leg_a"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:hint="leg a"/>
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leg_b"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:inputType="number"
+        android:hint="leg b"/>
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="SOLVE"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chanchon Pansuwan 621310112"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
